@@ -1,0 +1,49 @@
+<div class="container">
+    <div class="row">
+        <button (click)="click()">X</button>
+    
+        <div class="row" id="cont">
+            <br>
+            <div *ngFor="let i of compo">
+                <br>
+                <div class="comp">
+                    <button  class=" m-auto" (click)="addsub(i)">+</button><br>
+                    <div class="job" *ngFor="let p of i.sub"><br><input type="text" [(ngModel)]="term" >
+                        <button (click)="savesub(i.id,p)" class="save-button" >Save</button>
+                        <br>
+                    </div>
+                    
+                </div>
+            </div>
+            
+        </div>
+    <br>
+    <div style="font-size: medium;font-weight: 900;">
+        <!-- <button (click)="submit()" class="butto" [hidden]="submite" >Submit</button> -->
+        <div>&#123;</div>
+       
+        <div *ngFor=" let i of compo">
+
+            <div class="text-capitalize" >panel {{i.id}}</div>
+            <div>&#123;</div>
+            
+                <div *ngFor="let p of i.task">
+                   
+
+            
+                        {{p}},
+                  
+              
+            </div>
+            <br>
+            <div>&#10101;</div>,
+
+          
+        </div>
+
+    </div>
+    <div>&#10101;</div>
+
+</div>
+    
+</div>

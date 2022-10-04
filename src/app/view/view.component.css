@@ -1,0 +1,52 @@
+.container
+{
+    background-color: orange;
+    width: fit-content;
+    min-width: 100vw;
+    color: azure;
+    height: fit-content;
+    min-height: 100vh;
+    
+  
+
+}
+h3{
+    color: beige;
+}
+span {
+    content: "\007B";
+}
+.row
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.comp
+{
+    position: relative;
+    background-color: aquamarine;
+width: 100vw;
+height: fit-content;
+padding: 2vh;
+}
+button{
+    height: 70px;
+    width: 70px;
+    background-color: azure;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+.job
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1vw;
+}
+.save-button
+{    width: fit-content;
+    height: fit-content;
+    margin: 1vw;
+}
+
